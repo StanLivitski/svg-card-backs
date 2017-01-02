@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 9.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20000303 Stylable//EN"   "http://www.w3.org/TR/2000/03/WD-SVG-20000303/DTD/svg-20000303-stylable.dtd" [
+	<!ENTITY st0 "fill:#FFFFFF;stroke-width:0.5;">
+	<!ENTITY st1 "fill-rule:nonzero;clip-rule:nonzero;fill:#E61408;stroke:#000000;stroke-miterlimit:4;">
+	<!ENTITY st2 "stroke:none;">
+]>
+<!-- This set of SVG files is a complete cards game with figures, numbers	-->
+<!--    and backs of cards completely designed in SVG.				-->
+<!--    									-->
+<!--    Copyright (C) 2004 David Bellot						-->
+<!--										-->
+<!--    This library is free software; you can redistribute it and/or		-->
+<!--    modify it under the terms of the GNU Lesser General Public		-->
+<!--    License as published by the Free Software Foundation; either		-->
+<!--    version 2 of the License, or (at your option) any later version		-->
+<!--										-->
+<!--    This library is distributed in the hope that it will be useful,		-->
+<!--    but WITHOUT ANY WARRANTY; without even the implied warranty of		-->
+<!--    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU	-->
+<!--    Lesser General Public License for more details.				-->
+<!--										-->
+<!--    You should have received a copy of the GNU Lesser General Public	-->
+<!--    License along with this library; if not, write to the Free Software	-->
+<!--    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307  USA-->
+<!--										-->
+<!--    Contact the author David Bellot at bellot@stat.berkeley.edu or 		-->
+<!--    david.bellot@free.fr or yimyom@users.sourceforge.net			-->
+<svg  width="167.0859375pt" height="242.6645508pt" viewBox="0 0 167.0859375 242.6645508" xml:space="preserve">
+	<g id="Layer_x0020_1" style="&st1;">
+		<path style="&st0;" d="M166.8359375,235.5454102c0,3.7744141-3.0859375,6.8691406-6.8701172,6.8691406H7.1108398c-3.7749023,0-6.8608398-3.0947266-6.8608398-6.8691406V7.1196289C0.25,3.340332,3.3359375,0.25,7.1108398,0.25h152.8549805
+			c3.7841797,0,6.8701172,3.090332,6.8701172,6.8696289v228.4257813z"/>
+		<path style="&st2;" d="M85.4101563,121.3979492H69.8105469c0,0,2.4375,0.503418,9.2626953-6.046875c6.8251953-6.5507813,6.3369141-10.078125,6.3369141-10.078125 M69.8105469,121.3979492c0,0,3.4121094-0.5039063,9.75,6.5507813
+			c6.3369141,7.0546875,5.8496094,9.5742188,5.8496094,9.5742188v-16.125 M85.4101563,137.5229492c0,0-0.4873047-3.5273438,6.3378906-10.078125s9.2626953-6.046875,9.2626953-6.046875H85.4101563 M101.0107422,121.3979492c0,0-3.4130859,0.5039063-9.75-6.5507813
+			s-5.8505859-9.5742188-5.8505859-9.5742188v16.125"/>
+		<g>
+			<path style="&st2;" d="M10.9624023,25.9995117v-1.46875h0.6616211l3.0327148-16.5625H15.9375l3.0449219,16.5625h0.7612305v1.46875h-3.7700195v-1.46875h0.7856445l-0.6645508-3.6875h-3.0209961l-0.6762695,3.6875h0.9663086v1.46875h-2.4013672z
+				 M13.3398438,19.3745117h2.4887695l-1.2324219-6.8847656l-1.2563477,6.8847656z"/>
+		</g>
+		<g>
+			<path style="&st2;" d="M155.4853516,216.5805664v1.46875h-0.6611328l-3.0332031,16.5625h-1.28125l-3.0449219-16.5625h-0.7607422v-1.46875h3.7705078v1.46875h-0.7861328l0.6650391,3.6875h3.0205078l0.6767578-3.6875h-0.9667969v-1.46875h2.4013672z
+				 M153.1074219,223.2055664h-2.4882813l1.2324219,6.8847656l1.2558594-6.8847656z"/>
+		</g>
+		<path style="&st2;" d="M16.2431641,34.0561523h-5.0415039c0,0,0.7875977,0.1625977,2.9936523-1.9541016c2.2055664-2.1171875,2.0478516-3.2573242,2.0478516-3.2573242 M11.2016602,34.0561523c0,0,1.1030273-0.1625977,3.1508789,2.1171875
+			c2.0483398,2.2802734,1.890625,3.0942383,1.890625,3.0942383v-5.2114258 M16.2431641,39.2675781c0,0-0.1572266-1.1396484,2.0483398-3.2568359c2.2060547-2.1171875,2.9936523-1.9545898,2.9936523-1.9545898h-5.0419922 M21.2851563,34.0561523
+			c0,0-1.1025391,0.1630859-3.1508789-2.1171875s-1.8911133-3.0942383-1.8911133-3.0942383v5.2114258"/>
+		<path style="&st2;" d="M150.671875,208.1391602h5.0419922c0,0-0.7871094-0.1621094-2.9931641,1.9550781s-2.0488281,3.2568359-2.0488281,3.2568359 M155.7138672,208.1391602c0,0-1.1025391,0.1640625-3.1513672-2.1171875
+			c-2.0478516-2.2792969-1.890625-3.09375-1.890625-3.09375v5.2109375 M150.671875,202.9282227c0,0,0.1582031,1.140625-2.0478516,3.2578125c-2.2060547,2.1162109-2.9931641,1.953125-2.9931641,1.953125h5.0410156 M145.6308594,208.1391602
+			c0,0,1.1025391-0.1621094,3.1503906,2.1171875c2.0488281,2.28125,1.890625,3.0947266,1.890625,3.0947266v-5.2119141"/>
+	</g>
+</svg>
