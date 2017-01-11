@@ -13,3 +13,11 @@ June 15, 2004:
 * First initial release of the package.
 
   - all cards + 2 jokers + 14 backs of card
+
+Jan 02, 2017:
+=============
+
+* Created a fork of this project at <https://github.com/StanLivitski/svg-card-backs> to be used as a subproject of <https://github.com/StanLivitski/cards.webapp>.
+
+*************
+For the further history, please refer to the Git log of the above GitHub fork.
