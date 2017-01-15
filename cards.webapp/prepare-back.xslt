@@ -31,6 +31,10 @@ XSL transformation that changes an upstream back image of a card as follows:
    remove misleading information;
  - optimizes repetitive styles by moving them from the DTD to a <style>
    element, since XSLT 1.0 does not allow for custom DTD within XML output
+
+Note that the above optimization may not work with some older SVG rendering
+software that does not support CSS. If that is a problem for your project,
+use the un-optimized version of this transformation from file "prepare-back-no-style.xslt".
 *****************************************************************************
 -->
 <xsl:transform xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"

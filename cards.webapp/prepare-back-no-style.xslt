@@ -20,7 +20,15 @@
 *****************************************************************************
 XSL transformation that changes an upstream back image of a card as follows:
 
- - TODO
+ - adds xmlns="http://www.w3.org/2000/svg" to the /svg element for proper
+   rendering in browsers;
+ - sets width of the image using the `width` parameter that defaults
+   to '171.5900947pt', which results in aspect ratio of the image of
+   1:sqrt(2);
+ - sets the image's preserveAspectRatio attribute to "none" to enable
+   scaling it to the target aspect ratio;
+ - changes comments to add the new author, update copyrights, and
+   remove misleading information;
 *****************************************************************************
 -->
 <xsl:transform xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
