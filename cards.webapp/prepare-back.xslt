@@ -30,7 +30,7 @@ XSL transformation that changes an upstream back image of a card as follows:
  - changes comments to add the new author, update copyrights, and
    remove misleading information;
  - optimizes repetitive styles by moving them from the DTD to a <style>
-   element, since XSLT 1.0 does not allow for custom DTD within XML output
+   element, since XSLT 1.0 does not allow for custom DTD within XML output.
 
 Note that the above optimization may not work with some older SVG rendering
 software that does not support CSS. If that is a problem for your project,

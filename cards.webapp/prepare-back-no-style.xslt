@@ -28,7 +28,7 @@ XSL transformation that changes an upstream back image of a card as follows:
  - sets the image's preserveAspectRatio attribute to "none" to enable
    scaling it to the target aspect ratio;
  - changes comments to add the new author, update copyrights, and
-   remove misleading information;
+   remove misleading information.
 *****************************************************************************
 -->
 <xsl:transform xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
