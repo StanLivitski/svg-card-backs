@@ -74,7 +74,7 @@ use the un-optimized version of this transformation from file "prepare-back-no-s
    <xsl:attribute name="width"><xsl:value-of select="$width" /></xsl:attribute>
 
    <!-- generate defs/style if $style is not empty -->
-   <xsl:if test="$style">
+   <xsl:if test=" normalize-space($style)">
     <xsl:element name="defs" namespace="http://www.w3.org/2000/svg">
     <xsl:element name="style" namespace="http://www.w3.org/2000/svg">
      <xsl:value-of select="$style" />
