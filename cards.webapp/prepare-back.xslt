@@ -99,6 +99,15 @@ use the un-optimized version of this transformation from file "prepare-back-no-s
   <xsl:comment>    Copyright © 2017 Stan Livitski						</xsl:comment>
  </xsl:template>
 
+ <xsl:template match="/comment()[contains(.,'This set of SVG files is')]">
+  <xsl:comment>    This set of SVG files contains images of playing cards' backs		</xsl:comment>
+ </xsl:template>
+
+ <xsl:template match="/comment()[contains(.,'and backs of cards completely designed in SVG.')]">
+  <xsl:comment>    adapted from version 1.1 of the upstream project			</xsl:comment>
+  <xsl:comment>    &lt;https://sourceforge.net/projects/svg-cards/&gt;				</xsl:comment>
+ </xsl:template>
+
  <xsl:template match="comment()[contains(.,'Generator:')]|comment()[contains(.,'bellot@')]">
   <!-- omit these elements -->
  </xsl:template>

@@ -47,9 +47,6 @@ XSL transformation that changes an upstream back image of a card as follows:
   --><xsl:apply-templates select="node()" /></xsl:element>
  </xsl:template>
 
- <xsl:template match="//comment()[contains(.,'Generator:')]|//comment()[contains(.,'bellot@')]"><!-- omit these elements
- --></xsl:template>
-
  <xsl:template match="/comment()[contains(.,'Copyright')]">
   <xsl:copy><xsl:apply-templates select="text()"/></xsl:copy>
   <xsl:comment>    Copyright © 2017 Stan Livitski						</xsl:comment>
@@ -59,6 +56,18 @@ XSL transformation that changes an upstream back image of a card as follows:
   <xsl:comment><!-- replace 2 with 3
 --><xsl:value-of select="substring-before(.,'2')" />3<xsl:value-of select="substring-after(.,'2')" /></xsl:comment>
  </xsl:template>
+
+ <xsl:template match="/comment()[contains(.,'This set of SVG files is')]">
+  <xsl:comment>    This set of SVG files contains images of playing cards' backs		</xsl:comment>
+ </xsl:template>
+
+ <xsl:template match="/comment()[contains(.,'and backs of cards completely designed in SVG.')]">
+  <xsl:comment>    adapted from version 1.1 of the upstream project			</xsl:comment>
+  <xsl:comment>    &lt;https://sourceforge.net/projects/svg-cards/&gt;				</xsl:comment>
+ </xsl:template>
+
+ <xsl:template match="comment()[contains(.,'Generator:')]|comment()[contains(.,'bellot@')]"><!-- omit these elements
+ --></xsl:template>
 
  <xsl:template match="@*|node()"><xsl:copy><xsl:apply-templates select="@*|node()"/></xsl:copy></xsl:template>
 
