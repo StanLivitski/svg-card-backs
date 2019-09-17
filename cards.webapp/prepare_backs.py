@@ -1069,7 +1069,7 @@ class Converter:
     xpath_clip_container = '/svg/defs'
     xpath_shape_trees = '.'
 
-    clipLimitRect = (0, 0, .2, 1)
+    clipLimitRect = (0, 0, .5, 1)
     clipZoomFactor = (2, 1)
     clipFocus = (0, .5)
     clipIdFormat = 'clip-%(width)sx%(height)s'
@@ -1166,7 +1166,7 @@ class Converter:
             clip.setAttribute('viewBox', self.boxValue(clipRect))
             clip.setAttribute('width', str(clipRect[2]))
             clip.setAttribute('height', str(clipRect[3]))
-            clips.insert(0, clip)
+            clips.insert(0, (clip, clipRect))
             clipRect = tuple( c + (b - c) / f for b, c, f in zip(
                         clipRect[:2], focus, self.clipZoomFactor)) \
                      + tuple( round(c / f) for c, f in zip(
@@ -1179,15 +1179,16 @@ class Converter:
                   ((c if int(c) != c else int(c)) for c in viewBox)))
         image.setAttribute('id', id)
         offsetX = 0
-        clips.append(image)
+        clips.append((image, viewBox))
         anchor = gallery.firstChild
         for clip in clips:
+            clip, clipRect = clip
             self.makeUse(clip.getAttribute('id'),
                          gallery,
-                         (offsetX, 0),
+                         (offsetX, 0, clipRect[2], clipRect[3]),
                          anchor)
             if clip is not image:
-                offsetX += float(clip.getAttribute('width')) 
+                offsetX += clipRect[2] 
         gallery.setAttribute('viewBox', self.boxValue(
                                       viewBox[:2] + (viewBox[2] + offsetX, viewBox[3])))
         gallery.setAttribute('width', str((viewBox[2] + offsetX) * scale[0]) + unit)
@@ -1294,6 +1295,10 @@ class Converter:
                     ' of the original image size, which must be finite numbers'
                     ' between 0.0 and 1.0. Default: %s %s %s %s'
                       % Converter.clipLimitRect)
+@click.option('-rp', '--remove-prefix',
+              help= 'Prefix to be removed from names of card backs`'
+                    ' image files if the destination is a directory.'
+                    ' Default: no prefix.')
 @click.option('-zs', '--clip-zoom-step',
               metavar= 'HZOOM VZOOM',
               type= float,
@@ -1442,6 +1447,9 @@ def make_stack(paths, **kwargs):
             pass
         elif path.isdir(target):
             fname = path.basename(sourcePath)
+            prefix = kwargs.get('remove_prefix')
+            if prefix and fname.startswith(prefix):
+                fname = fname[len(prefix):]
             targetPath = path.join(target, fname)
         else:
             targetPath = target
