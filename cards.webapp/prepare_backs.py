@@ -73,7 +73,7 @@ Dependenices
 | | https://python-future.org/                              | _xpath_six``  |
 +-----------------------------------------------------------+---------------+
 
-**NOTE:** ``svgpathtools/path.py`` must be patched by changing line 2196  from::
+**NOTE:** ``svgpathtools/path.py`` version 1.3.3 must be patched by changing line 2196  from::
 
  < pts = [seg1.point(_t1) for _T1, _seg1, _t1 in list(zip(*intersecti
 
@@ -81,7 +81,7 @@ to::
 
  > pts = [_seg1.point(_t1) for _T1, _seg1, _t1 in list(zip(*intersection_list))[0]]
 
-(see `svgpathtools bug report #94<https://github.com/mathandy/svgpathtools/issues/94>`_ for details)
+(see `svgpathtools bug report #94<https://github.com/mathandy/svgpathtools/issues/94>`_ for details). Versions that include fix from <https://github.com/mathandy/svgpathtools/pull/136> may not require this patch.
 
 See also
 --------
